@@ -1,0 +1,25 @@
+{
+  "name": "indexeddb-storage",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "vitest",
+    "browsers": "pnpm exec playwright install chromium --with-deps"
+  },
+  "keywords": [
+    "zustand",
+    "indexeddb",
+    "db",
+    "persist",
+    "serializable"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/browser-playwright": "^4.0.14",
+    "playwright": "^1.57.0",
+    "vitest": "^4.0.14",
+    "zustand": "^5.0.8"
+  }
+}

@@ -1,0 +1,4 @@
+*.DS-Store
+/node_modules
+/build
+__screenshots__
