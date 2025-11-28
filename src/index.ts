@@ -10,7 +10,9 @@ import { openDatabase, promisifyRequest } from './utils'
  * @example
  * createStore(
  *   persist(initialState, {
- *     storage: createIndexedDBStorage('my-db', 'my-store')
+ *     version: 0.1,
+ *     name: 'row-key',
+ *     storage: createIndexedDBStorage('database-name', 'store-name')
  *   })
  * )
  */

@@ -1,12 +1,28 @@
 {
+  "type": "module",
   "name": "zustand-indexeddb",
   "version": "0.0.0",
   "description": "Persist Zustand state in IndexedDB.",
   "main": "./build/index.js",
-  "scripts": {
-    "test": "vitest",
-    "browsers": "pnpm exec playwright install chromium --with-deps"
+  "types": "./build/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./build/index.d.ts",
+      "default": "./build/index.ts"
+    }
   },
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest",
+    "browsers": "pnpm exec playwright install chromium --with-deps",
+    "release": "release publish"
+  },
+  "files": [
+    "./src",
+    "./build",
+    "./tests"
+  ],
   "keywords": [
     "zustand",
     "indexeddb",
@@ -14,14 +30,17 @@
     "persist",
     "serializable"
   ],
-  "author": "",
+  "author": "Artem Zakharchenko <kettanaito@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "zustand": "^5.0.0"
   },
   "devDependencies": {
+    "@ossjs/release": "^0.10.0",
     "@vitest/browser-playwright": "^4.0.14",
     "playwright": "^1.57.0",
+    "tsdown": "^0.16.8",
+    "typescript": "^5.9.3",
     "vitest": "^4.0.14",
     "zustand": "^5.0.8"
   }
