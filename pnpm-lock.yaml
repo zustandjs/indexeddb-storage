@@ -17,6 +17,9 @@ importers:
       playwright:
         specifier: ^1.57.0
         version: 1.57.0
+      publint:
+        specifier: ^0.3.15
+        version: 0.3.15
       tsdown:
         specifier: ^0.16.8
         version: 0.16.8(publint@0.3.15)(typescript@5.9.3)
