@@ -1,6 +1,6 @@
-# `createIndexedDBStorage()`
+# `zustand-indexeddb`
 
-Persist Zustand state in IndexedDB.
+Persist Zustand stores in IndexedDB.
 
 ## Motivation
 

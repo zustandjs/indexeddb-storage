@@ -2,7 +2,7 @@
   "type": "module",
   "name": "zustand-indexeddb",
   "version": "0.0.0",
-  "description": "Persist Zustand state in IndexedDB.",
+  "description": "Persist Zustand stores in IndexedDB.",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "exports": {
